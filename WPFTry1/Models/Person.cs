@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPFTry1.Models
 {
-    class Person
+    public class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

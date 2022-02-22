@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WPFTry1.Models;
 
 namespace WPFTry1.ViewModels
 {
     public class PersonViewModel
     {
-       
+        
         private string firstName;
 
         public string FirstName
@@ -38,8 +39,13 @@ namespace WPFTry1.ViewModels
             get { return adress; }
             set { adress = value; }
         }
-
-
-
+        //private List<Person> people = new List<Person>;
+        //public List<Person> People
+        //{
+        //    get
+        //    {
+        //        return people;
+        //    }
+        //}
     }
 }

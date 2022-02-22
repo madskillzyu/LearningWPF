@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFTry1.Models;
 
 namespace WPFTry1.Views
 {
@@ -17,9 +18,24 @@ namespace WPFTry1.Views
     /// </summary>
     public partial class DashBoard : Window
     {
+        private List<Person> people;
         public DashBoard()
         {
             InitializeComponent();
+            people = new List<Person>();
+            people.Add(new Person { FirstName = "Marko", LastName = "Lazic", Age = 33, Adresss = "Prizrenska 16" });
+            people.Add(new Person { FirstName = "Vuk", LastName = "Lazic", Age = 4, Adresss = "Palmoticeva 2" });
+            people.Add(new Person { FirstName = "Stefan", LastName = "Lazic", Age = 2, Adresss = "Palmoticeva 2" });
+            people.Add(new Person { FirstName = "Vasilije", LastName = "Lazic", Age = 1, Adresss = "Palmoticeva 2" });
+            people.Add(new Person { FirstName = "Tamara", LastName = "Lazic", Age = 33, Adresss = "Prizrenska 16" });
+        }
+
+        public List<Person> People 
+        {
+            get
+            {
+                return people;
+            }
         }
     }
 }
